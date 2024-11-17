@@ -5,6 +5,7 @@ backend/static/admin/
 django.log
 .vscode
 venv
+.venv
 db/qleverui.sqlite3
 db/qleverui.sqlite3.BACKUP*
 backend/static/js/qleverUI.js
