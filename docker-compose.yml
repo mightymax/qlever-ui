@@ -1,0 +1,15 @@
+name: ldmax
+services:
+  sparql-ui:
+    image: "ldmax-sparql-ui:latest"
+    ports:
+      - "7000:7000"
+    volumes:
+      - ${QLEVER_DB:-/var/local/qlever-ui/db}:/app/db
+    networks:
+      - loadbalancer
+
+networks:
+  loadbalancer:
+    external: true
+    name: webserver
